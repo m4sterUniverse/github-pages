@@ -1,0 +1,179 @@
+body{
+    background-color: #21a3a3
+}
+
+.corpo {
+    background-color: #2b364a;
+    margin:  auto;
+    border: 2px solid white;
+    display: block;
+    height: 40%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+} 
+.slides {
+	background-color: #2b364a;
+	width: 100%;
+	height: 600px;
+	margin: 0px auto;
+	position: relative;
+
+	display: inline-block;
+    overflow: hidden;
+}
+.imgs {
+	width:  100%;
+	height: auto;
+	text-align: center;
+	display: none;
+    margin-top: 2%;
+	animation-name: animacao;
+	animation-duration: 0.8s;
+
+} 
+.imgs img {
+	width: 50%;
+	height: auto;
+	margin:  auto;
+	box-shadow: 10px 10px 80px black;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.imgs img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.slides label {
+
+	color: #21a3a3;
+	z-index: 3;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+    margin-left: 50%;
+	text-align: center;
+	font-size: 5em;
+
+}
+
+@keyframes animacao {
+	from {opacity: 0.5};
+	to {opacity: 1}
+}
+
+
+#mapa {
+    position: relative;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    height: 300px;
+    background-image: url("../imgs/MAPA.png");
+    background-position: center center;
+}
+
+#mapa img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top:  50%;
+    z-index: 3;
+
+   
+
+}
+.zoom {
+    position: absolute;
+    top: 20px;
+   left: 10px;
+    width: 30px;
+    height: 20px;
+    background-color: grey;
+    color: black;
+    padding-top: 1px;
+    
+}
+#in {
+    border-radius: 5px 5px 0px 0px;
+}
+#out {
+    top: 40px;
+    border-radius: 0px 0px 5px 5px;
+}
+#quem-somos {
+    width: 50%;
+    padding: 50px 10%;
+    border: none;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    clear: both;
+ 
+}
+
+
+
+@media (max-width: 999px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: purple;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+
+
+
+@keyframes zoom {
+}

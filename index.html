@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyberbar</title>
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/quem somos.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/rodape.css">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="imgs/logo.png">
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+                    <li><a href="quem somos.html">Quem somos</a></li>
+                    <li><a href="nossa-equipe.html">Nossa equipe</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>    
+</ul>
+</nav>
+
+<div class="slides">
+	<div class="imgs" id="1">
+		<img id="img1" src="imgs/slides/2001671f92100d341abdda4a68ac86ec.jpg" alt="Slide 1">
+		<!--<label for ="img1">Slide 1</label>-->
+	</div>	 
+	
+	<div class="imgs"  id="2">
+		<img id="img1" src="imgs/slides/atom_molecule_chemistry_161897_1920x1080.jpg" alt="Slide 1">
+		<!--<label for ="img2">Slide 2</label>-->
+	</div>	 
+	
+	<div class="imgs"  id="3">
+		<img id="img1" src="imgs/slides/ilu2.jpg" alt="Slide 1">
+		<!--<label for ="img3">Slide 3</label>-->
+	</div>	 
+	
+	<div class="imgs" id="4">
+		<img id="img1" src="imgs/slides/ilu1.jpg" alt="Slide 1">
+		<!--<label for ="img4">Slide 4</label>-->
+	</div>	 
+
+</div>
+
+
+<div id="mapa" class="corpo">
+    <button value="+" class="zoom" id="in">+</button>
+    <button value="-" class="zoom" id="out">-</button>
+    <img src="imgs/pin.png" id="pinPoint">
+    <img src="imgs/MAPA.png"> 
+</div>
+<!--<header>
+    <main>Escrever</main>
+    <script src="mobile-navbar.js"></script>
+</header>-->
+
+<div id="quem-somos" class="corpo">
+                    <p>Olá! Somos a Cyberbar, um lugar de entretenimento gamer e lazer.
+                        Estamos aqui para te recepcionar da melhor forma, aceitando todos os tipos de pessoas, com o propósito
+                        de fazer todos se conectarem e se unirem em uma grande <font color="red">comunidade!</font>          
+                    </p>
+</div>
+
+<div id="chat-fechado" class="chat">
+    <button id="abrir">&and;</button>
+</div>
+
+<div id="chat" class="chat">
+    <h2>Chat da Juliette</h2>
+    <button id="fechar">
+                &or;
+    </button>
+    <div id="msgs">
+            <ul class="lista-msgs">
+               <img src="imgs/juliette.webp">
+               <li class="msgs">Boa tarde! Como posso te ajudar?</li> 
+            </ul>
+            <form id="enviar">
+                <input type="text" placeholder="Escreva sua mensagem aqui :)" id="msg">
+                <input type="submit" id="submit" value=">"> 
+            </form>
+    </div>
+
+</div>
+
+
+
+<footer>
+    <div id="icone-cyberbar-rodape">
+    
+    </div>
+   <p>Cyberbar &copy - Conectando corações | 2018 <br>Todos os direitos autorais pertencem aos seus respectivos autores</p>
+
+</footer>
+
+
+
+
+<script src="js/slides.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/chat.js"></script>
+
+
+
+</body>
+</html>

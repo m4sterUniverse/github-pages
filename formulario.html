@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyberbar</title>
+    
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+   <!-- <script src="js_/formulario.js"></script>-->
+</head>
+<body>
+  <nav>
+        <img id="logo" src="imgs/logo.png">
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+                    <li><a href="index.html">Quem somos</a></li>
+                    <li><a href="nossa-equipe.html">Nossa equipe</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="formulario.html">Formulário</a></li>    
+</ul>
+</nav>
+  <div>
+    <div class="child">
+    </div>
+    <div class="child">
+    </div>
+    <div class="child">
+    </div>
+  <div class="row">
+    
+        <div class="conteiner">
+          <div class="header">
+            <h2>Entre em contato conosco</h2>
+          </div>
+          <form action="https://api.staticforms.xyz/submit" method="post" id="form" class="form">
+            <div class="form-control">
+              <label for="username">Primeiro Nome</label>
+              <input type="text" id="username" placeholder="Digite seu nome..."/>
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+          
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Digite seu email..."/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de errro</small>
+          </div>
+          
+
+          <div class="form-control success" success>
+            <label for="email">Mensagem</label>
+            <textarea name="textAreaMensagem" id="texAreaMensagem" placeholder="Escreva sua mensagem..."></textarea>
+          
+            <small>mensagem de erro</small>
+          </div>
+
+          <button onclick="obrigado()" type="submit" >Enviar</button>
+          
+          <input type="hidden" name="accessKey" value="2a78ae1d-f79d-4c59-91e3-678774ead31f">
+          <input type="hidden" name="redirectTo" value="http://localhost:8080/obrigado.htm">
+
+        </form>
+        </div>
+     
+  
+    </div>
+  <footer>
+      <div id="icone-cyberbar-rodape"> 
+      </div>
+      <p>Cyberbar &copy - Conectando corações | 2018 <br>Todos os direitos autorais pertencem aos seus respectivos autores</p>
+
+  </footer>    
+
+  <script src="https://kit.fontawesome.com/a4c3ec9bac.js" crossorigin="anonymous"></script>
+  <script src="js_/formulario.js"></script>
+</body>
+</html>
