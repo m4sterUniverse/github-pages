@@ -1,0 +1,102 @@
+.chat {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;   
+    width: 300px;   
+    z-index: 3;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+#chat {
+    height: 500px;
+    display: none;
+    animation-name: fadein;
+    animation-duration: 1s;
+    display: none;
+    font-size: 0.9em;
+}
+#chat-fechado {
+    height: 40px; 
+    display: none;
+}
+
+
+#msg{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    width: 90%;
+    right: 10px;
+
+}
+#submit {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    right: 10px;
+    width: 30px;
+    height:  40px;
+
+
+}
+
+
+
+
+#fechar  {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 1.2em;
+    font-weight: 200;
+    height: 30px;
+    border: none;
+    background-color: none;
+    
+}
+#chat-fechado button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 1.2em;
+    font-weight: 200;
+    height: 30px;
+    border: none;
+    background-color: none;
+
+
+}
+
+.lista-msgs img {
+    width: 60px;
+    height: auto;
+    border-radius: 100px;
+}
+
+#msgs {
+    
+    overflow-y: auto;
+    height: 350px;
+    width: 350;
+    margin-top: 10px;
+}
+.msgs {
+    position: absolute;
+    padding: 10px 0px 0px 0px;
+    max-width:  300px;
+    right:  10px;
+}
+@keyframes fadein {
+0% { transform:  translateY(500px);
+} 
+50% { transform: translateY(445px);
+}
+80% { transform: translatey(445px);
+}
+100% { transform: translateY(0px);
+}
+}

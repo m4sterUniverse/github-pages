@@ -1,0 +1,53 @@
+* {
+	margin: 0px;
+}
+
+
+.slides {
+	background-color: brown;
+	width: 100%;
+	height: 500px;
+	margin: 20px auto;
+	position: relative;
+	display: inline-block;
+
+}
+.imgs {
+	width:  100%;
+	height: auto;
+	text-align: center;
+	display: none;
+	animation-name: animacao;
+	animation-duration: 0.8s;
+} 
+.imgs img {
+	width: 50%;
+	height: auto;
+	margin:  auto;
+	box-shadow: 10px 10px 80px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.imgs img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+label {
+	margin: auto;
+	color: white;
+	background-color: black;
+	z-index: 2;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	text-align: center;
+	font-size: 5em;
+}
+
+@keyframes animacao {
+	from {opacity: 0.5};
+	to {opacity: 1}
+}
+

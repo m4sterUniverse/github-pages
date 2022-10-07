@@ -1,0 +1,126 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: aliceblue;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+   
+  
+}
+*/
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.row {
+    padding: 0 20px;
+    display: table;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  grey;
+}
+.row h2 {
+    color:  white;
+}
+
+
+    
+/*
+nav {
+    background-color: green;
+    height: 80px;
+    width: 100%;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:0px;
+    float: right;
+}
+
+nav ul li {     
+    display: inline-block;     
+    line-height: 80px;     
+    margin: 0 5px 
+}  
+
+nav ul li a {     
+    color:black;     
+    font-size: 15px;    
+    padding: 7px 13px;     
+    border-radius: 3px;     
+    text-transform: uppercase;     
+    font-family: 'Times New Roman', Times, serif;     
+    font-weight: bold; 
+}
+
+nav a:hover{
+    background-color: red;
+}
+*/
+
+.espaco {
+    display: flex
+}
+
+.child {
+    width: 20%;
+    height: 20px;
+    white-space: 100%;
+}
+
+/*@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        color: purple
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s; 
+
+    }
+    
+
+    
+
+    nav ul li a {
+        font-size: 15px;
+        color: purple;
+
+    }
+    a:active, a:hover{
+        background:red;
+        transition: red .5s;
+    }
+
+}*/
